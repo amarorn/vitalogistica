@@ -1,0 +1,56 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# JS/TS files
+*.js text
+*.jsx text
+*.ts text
+*.tsx text
+
+# JSON files
+*.json text
+
+# CSS/SCSS files
+*.css text
+*.scss text
+
+# HTML files
+*.html text
+
+# Config files
+*.yml text
+*.yaml text
+*.env* text
+*.config.js text
+
+# Documentation
+*.md text
+*.txt text
+
+# Graphics
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Fonts
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+# Lock files
+package-lock.json text
+yarn.lock text
+pnpm-lock.yaml text
+
+# Git merge strategy
+*.js merge=union
+*.jsx merge=union
+*.ts merge=union
+*.tsx merge=union
+*.json merge=union
+*.css merge=union
+*.scss merge=union
+*.html merge=union
+*.md merge=union 
