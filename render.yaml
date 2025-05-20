@@ -7,7 +7,7 @@ services:
     startCommand: cd frontend && npx serve -s build -l 3000
     envVars:
       - key: REACT_APP_API_URL
-        value: https://vitalogistica-backend.onrender.com
+        value: https://vitalogistica-backend.onrender.com/api
     healthCheckPath: /
     autoDeploy: true
 
