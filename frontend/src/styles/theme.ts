@@ -3,16 +3,16 @@ import { createTheme } from '@mui/material/styles';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#2563eb',
-      light: '#60a5fa',
-      dark: '#1e40af',
+      main: '#1E3951',
+      light: '#42536a',
+      dark: '#162838',
       contrastText: '#fff',
     },
     secondary: {
-      main: '#7c3aed',
-      light: '#a78bfa',
-      dark: '#5b21b6',
-      contrastText: '#fff',
+      main: '#F8AB14',
+      light: '#FFD25A',
+      dark: '#C4880F',
+      contrastText: '#1E3951',
     },
     success: {
       main: '#22c55e',
@@ -27,18 +27,18 @@ export const theme = createTheme({
       contrastText: '#fff',
     },
     info: {
-      main: '#06b6d4',
-      light: '#67e8f9',
-      dark: '#0e7490',
+      main: '#1E3951',
+      light: '#42536a',
+      dark: '#162838',
       contrastText: '#fff',
     },
     background: {
-      default: '#f3f4f6',
+      default: '#fff',
       paper: '#fff',
     },
     text: {
-      primary: '#1e293b',
-      secondary: '#64748b',
+      primary: '#1E3951',
+      secondary: '#F8AB14',
     },
   },
   typography: {
@@ -46,26 +46,32 @@ export const theme = createTheme({
     h1: {
       fontSize: '2.5rem',
       fontWeight: 700,
+      color: '#1E3951',
     },
     h2: {
       fontSize: '2rem',
       fontWeight: 700,
+      color: '#1E3951',
     },
     h3: {
       fontSize: '1.75rem',
       fontWeight: 600,
+      color: '#1E3951',
     },
     h4: {
       fontSize: '1.5rem',
       fontWeight: 600,
+      color: '#1E3951',
     },
     h5: {
       fontSize: '1.25rem',
       fontWeight: 500,
+      color: '#1E3951',
     },
     h6: {
       fontSize: '1rem',
       fontWeight: 500,
+      color: '#1E3951',
     },
   },
   components: {
@@ -75,7 +81,21 @@ export const theme = createTheme({
           textTransform: 'none',
           borderRadius: 10,
           fontWeight: 600,
-          boxShadow: '0 2px 8px 0 rgba(124,58,237,0.08)',
+          boxShadow: '0 2px 8px 0 rgba(30,57,81,0.08)',
+        },
+        containedPrimary: {
+          backgroundColor: '#1E3951',
+          color: '#fff',
+          '&:hover': {
+            backgroundColor: '#162838',
+          },
+        },
+        containedSecondary: {
+          backgroundColor: '#F8AB14',
+          color: '#1E3951',
+          '&:hover': {
+            backgroundColor: '#C4880F',
+          },
         },
       },
     },
@@ -83,7 +103,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: 16,
-          boxShadow: '0 4px 24px rgba(37,99,235,0.08)',
+          boxShadow: '0 4px 24px rgba(30,57,81,0.08)',
         },
       },
     },
@@ -97,7 +117,7 @@ export const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          background: 'linear-gradient(90deg, #2563eb 0%, #7c3aed 100%)',
+          background: 'linear-gradient(90deg, #1E3951 0%, #F8AB14 100%)',
         },
       },
     },

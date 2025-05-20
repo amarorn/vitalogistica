@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import authRoutes from './routes/authRoutes';
 import budgetRoutes from './routes/budgetRoutes';
+import healthRoutes from './routes/health';
 
 // Configuração do ambiente
 dotenv.config();
@@ -15,7 +16,7 @@ app.use(cors());
 app.use(express.json());
 
 // Conexão com o MongoDB
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/vitta-logistica';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://cactusystem:E8Lf44iRntM7ogt1@vitalogistica.6wc22bf.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(MONGODB_URI)
   .then(() => {
@@ -28,6 +29,7 @@ mongoose.connect(MONGODB_URI)
 // Rotas
 app.use('/api/auth', authRoutes);
 app.use('/api/budgets', budgetRoutes);
+app.use('/api', healthRoutes);
 
 // Rota básica
 app.get('/', (req, res) => {

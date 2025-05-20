@@ -116,6 +116,7 @@ export const Dashboard: React.FC = () => {
       type: 'donut'
     },
     labels: ['Aprovados', 'Pendentes', 'Rejeitados'],
+    colors: [theme.palette.secondary.main, '#22c55e', '#ef4444'],
     responsive: [
       {
         breakpoint: 480,
@@ -139,6 +140,7 @@ export const Dashboard: React.FC = () => {
       height: 350,
       type: 'radialBar'
     },
+    colors: [theme.palette.primary.main, theme.palette.secondary.main, '#22c55e'],
     plotOptions: {
       radialBar: {
         dataLabels: {
@@ -172,6 +174,7 @@ export const Dashboard: React.FC = () => {
         show: false
       }
     },
+    colors: [theme.palette.primary.main, theme.palette.secondary.main],
     dataLabels: {
       enabled: false
     },
@@ -219,7 +222,7 @@ export const Dashboard: React.FC = () => {
           gutterBottom 
           sx={{ 
             fontWeight: 600,
-            background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+            background: `linear-gradient(45deg, ${theme.palette.primary.main} 30%, ${theme.palette.secondary.main} 90%)`,
             backgroundClip: 'text',
             textFillColor: 'transparent',
             WebkitBackgroundClip: 'text',

@@ -20,8 +20,7 @@
     "lint:frontend": "cd frontend && npm run lint",
     "lint:backend": "cd backend && npm run lint",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "clean": "rimraf node_modules **/node_modules",
-    "prepare": "husky install"
+    "clean": "rimraf node_modules **/node_modules"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

@@ -53,17 +53,55 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <Box sx={{ display: 'flex', height: '100vh' }}>
       <CssBaseline />
-      <AppBar position="fixed" sx={{ zIndex: theme.zIndex.drawer + 1, background: 'linear-gradient(90deg, #2563eb 0%, #7c3aed 100%)', boxShadow: '0 4px 24px rgba(37,99,235,0.08)' }}>
-        <Toolbar>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, fontWeight: 700, letterSpacing: 1 }}>
+      <AppBar
+        position="fixed"
+        elevation={0}
+        sx={{
+          zIndex: theme.zIndex.drawer + 1,
+          background: `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
+          borderTopLeftRadius: 24,
+          borderBottomLeftRadius: 24,
+          height: 72,
+          display: 'flex',
+          justifyContent: 'center',
+          px: 4,
+          backdropFilter: 'blur(8px)',
+          backgroundColor: 'rgba(30, 57, 81, 0.85)',
+          boxSizing: 'border-box',
+          boxShadow: '0 2px 16px 0 rgba(30,57,81,0.10), inset 0 1px 8px 0 rgba(248,171,20,0.08)',
+          transition: 'background 0.4s, box-shadow 0.4s',
+        }}
+      >
+        <Toolbar disableGutters sx={{ minHeight: 72, width: '100%' }}>
+          <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%' }}>
+            <Typography
+              variant="h5"
+              noWrap
+              component="div"
+              sx={{
+                fontWeight: 800,
+                letterSpacing: 1,
+                color: '#fff',
+                textShadow:
+                  '0 2px 8px rgba(30,57,81,0.18), 0 1px 16px rgba(248,171,20,0.10)',
+                fontSize: { xs: '1.2rem', md: '2.2rem' },
+                textAlign: 'center',
+                width: '100%',
+                filter: 'brightness(1.08)',
+                transition: 'text-shadow 0.4s',
+              }}
+            >
             Sistema de Gestão de Orçamentos
           </Typography>
-          <IconButton color="inherit" sx={{ ml: 2 }}>
+          </Box>
+          <Box sx={{ position: 'absolute', right: 32, display: 'flex', alignItems: 'center' }}>
+            <IconButton color="inherit" sx={{ ml: 2, transition: 'background 0.3s', '&:hover': { background: 'rgba(248,171,20,0.12)' } }}>
             <HelpIcon />
           </IconButton>
-          <IconButton sx={{ ml: 1 }}>
-            <Avatar sx={{ bgcolor: theme.palette.secondary.main, color: '#fff', fontWeight: 700 }}>U</Avatar>
+            <IconButton sx={{ ml: 1, transition: 'background 0.3s', '&:hover': { background: 'rgba(248,171,20,0.18)' } }}>
+              <Avatar sx={{ bgcolor: theme.palette.secondary.main, color: '#fff', fontWeight: 700, boxShadow: '0 2px 8px 0 rgba(30,57,81,0.10)' }}>U</Avatar>
           </IconButton>
+          </Box>
         </Toolbar>
       </AppBar>
       <Drawer

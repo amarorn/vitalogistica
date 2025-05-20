@@ -3,76 +3,76 @@ import { createTheme } from '@mui/material';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#2C3E50',
-      light: '#34495E',
-      dark: '#2980B9',
+      main: '#1E3951',
+      light: '#42536a',
+      dark: '#162838',
     },
     secondary: {
-      main: '#3498DB',
-      light: '#ECF0F1',
-      dark: '#2C3E50',
+      main: '#F8AB14',
+      light: '#FFD25A',
+      dark: '#C4880F',
     },
     error: {
       main: '#E74C3C',
     },
     warning: {
-      main: '#F1C40F',
+      main: '#F8AB14',
     },
     success: {
       main: '#27AE60',
     },
     background: {
-      default: '#ECF0F1',
-      paper: '#FFFFFF',
+      default: '#fff',
+      paper: '#fff',
     },
     text: {
-      primary: '#2C3E50',
-      secondary: '#7F8C8D',
+      primary: '#1E3951',
+      secondary: '#F8AB14',
     },
-    divider: '#BDC3C7',
+    divider: '#1E3951',
   },
   typography: {
     fontFamily: 'Arial, sans-serif',
     h4: {
       fontSize: '28px',
       fontWeight: 500,
-      color: '#2C3E50',
+      color: '#1E3951',
     },
     h6: {
       fontSize: '18px',
       fontWeight: 500,
-      color: '#2C3E50',
+      color: '#1E3951',
     },
     subtitle1: {
       fontSize: '16px',
-      color: '#7F8C8D',
+      color: '#F8AB14',
     },
     subtitle2: {
       fontSize: '14px',
-      color: '#7F8C8D',
+      color: '#F8AB14',
     },
     body1: {
       fontSize: '14px',
-      color: '#2C3E50',
+      color: '#1E3951',
     },
     body2: {
       fontSize: '14px',
-      color: '#7F8C8D',
+      color: '#F8AB14',
     },
   },
   components: {
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#2C3E50',
+          backgroundColor: '#1E3951',
         },
       },
     },
     MuiDrawer: {
       styleOverrides: {
         paper: {
-          backgroundColor: '#34495E',
-          color: '#FFFFFF',
+          backgroundColor: '#1E3951',
+          color: '#fff',
           width: 250,
         },
       },
@@ -81,9 +81,10 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           '&.Mui-selected': {
-            backgroundColor: '#2980B9',
+            backgroundColor: '#F8AB14',
+            color: '#1E3951',
             '&:hover': {
-              backgroundColor: '#2980B9',
+              backgroundColor: '#C4880F',
             },
           },
         },
@@ -93,7 +94,7 @@ export const theme = createTheme({
       styleOverrides: {
         primary: {
           fontSize: '18px',
-          color: '#FFFFFF',
+          color: '#1E3951',
         },
       },
     },
@@ -101,7 +102,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '5px',
-          boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+          boxShadow: '0 1px 3px rgba(30,57,81,0.12)',
         },
       },
     },
@@ -112,15 +113,17 @@ export const theme = createTheme({
           textTransform: 'none',
         },
         containedPrimary: {
-          backgroundColor: '#2980B9',
+          backgroundColor: '#1E3951',
+          color: '#fff',
           '&:hover': {
-            backgroundColor: '#2C3E50',
+            backgroundColor: '#162838',
           },
         },
-        containedSuccess: {
-          backgroundColor: '#27AE60',
+        containedSecondary: {
+          backgroundColor: '#F8AB14',
+          color: '#1E3951',
           '&:hover': {
-            backgroundColor: '#219A52',
+            backgroundColor: '#C4880F',
           },
         },
       },
@@ -131,10 +134,10 @@ export const theme = createTheme({
           '& .MuiOutlinedInput-root': {
             borderRadius: '5px',
             '& fieldset': {
-              borderColor: '#BDC3C7',
+              borderColor: '#1E3951',
             },
             '&:hover fieldset': {
-              borderColor: '#7F8C8D',
+              borderColor: '#F8AB14',
             },
           },
         },
@@ -144,7 +147,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '5px',
-          boxShadow: '0 1px 3px rgba(0,0,0,0.12)',
+          boxShadow: '0 1px 3px rgba(30,57,81,0.12)',
         },
       },
     },
